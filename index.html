@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="financial-form">
+        <select id="transaction-type">
+            <option value="Ingreso">Ingreso</option>
+            <option value="Gasto">Gasto</option>
+        </select>
+
+        <input type="text" id="transaction-detail" placeholder="Detalle">
+        <input type="number" id="transaction-amount" placeholder="Monto">
+        <button type="submit">Agregar</button>
+    </form>
+
+    <table id="transaction-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Tipo</th>
+                <th>Detalle</th>
+                <th>Monto</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <p>Ingresos: <span id="total-ingresos">0</span></p>
+    <p>Gastos: <span id="total-gastos">0</span></p>
+    <p>Balance: <span id="balance">0</span></p>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
